@@ -1,0 +1,12 @@
+body{
+  background-color: cadetblue;
+  text-align: center;
+  color:black;
+}
+.Task{
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+Input{
+  background-color: antiquewhite;
+}
