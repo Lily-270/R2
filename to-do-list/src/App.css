@@ -1,12 +1,58 @@
-body{
-  background-color: rgb(201, 168, 210);
-  text-align: center;
-  color:black;
+.App{
+  display:grid;
+  grid-template-columns: auto auto ;
+  grid-template-areas: "section1 section2";
 }
-.Task{
-  text-align: center;
-  color: rgb(0, 0, 0);
+h1{
+  color:#283C6F;
+  font-size:45px;
 }
-Input{
-  background-color: antiquewhite;
+h4{
+ margin-top:45vh;
+}
+.task{
+  color:#3f2f16;
+  font-size:27px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.section1{
+  grid-area: section1;
+  margin-top:15%;
+text-align:center;
+justify-content: center;
+}
+label,button{
+  display:block;
+}
+.section2{
+  grid-area: section2;
+}
+#input{
+  width:15rem;
+  height:1.5rem;
+  border-radius:40px;
+  margin-right: auto;
+  margin-left:auto;
+  border:solid #E2D4BD 1px;
+  background-color: #fcebcf;
+  margin-top:1rem;
+  text-align:center;
+  font-size:17px;
+}
+button{
+  width:6rem;
+  height:1.7rem;
+  border-radius:20px;
+  border:solid #FDE0B0 1px;
+  background-color: #FDE0B0;
+  margin-right: auto;
+  margin-left:auto;
+  margin-top:1rem;
+}
+button:hover{
+  color:#ffffff;
+  background-color: #e8a8d3;
+}
+.section2{
+  background-image:linear-gradient(to bottom, #B48DBF , #FDE0B0);
 }
