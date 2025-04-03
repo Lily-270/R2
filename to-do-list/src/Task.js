@@ -18,7 +18,7 @@ export default function Task() {
     return (
         <>
         <div className="section1">
-        <h1 className="header">My to do list </h1>
+        <h1>My to do list </h1>
         <label htmlFor="input" class="task">Add a task :</label>
         <input type="text" id="input"/>
         <label htmlFor="date">Choose a date:</label>
@@ -35,10 +35,12 @@ export default function Task() {
             </select>
         </form>
         <button>Add task</button>
+        <img src="https://i.pinimg.com/736x/0b/d8/31/0bd831df87dba9efc0967d63f0d13bbd.jpg"
+            alt="notebook" width="90" height="90"/>
         <h4>By Lilyan Hatim,  with Love 💕</h4>
         </div>
         <div className="section2">
-        <h1>Tasks: 🌟</h1>
+        <h1 className="header">Tasks: 🌟</h1>
         </div>
         </>
     )
