@@ -1,16 +1,29 @@
 .App{
   display:grid;
-  grid-template-columns: auto auto ;
+  grid-template-columns:40% 60% ;
   grid-template-areas: "section1 section2";
   overflow:hidden;
+}
+@media (max-width:550px){
+  .App{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "section1"
+    "section2";
+  }
+  .card{
+    width:7rem;
+    font-size:14px;
+  }
 }
 h1{
   color:#283C6F;
   font-size:45px;
 }
 h4{
-  margin-bottom:0;
-  margin-top:5%;
+  font-size:14px;
+  text-align:center;
+  padding: 10px;
 }
 .task{
   color:#3f2f16;
@@ -34,8 +47,9 @@ label,button{
   grid-area: section2;
   background-image:url('https://i.pinimg.com/736x/84/43/9c/84439cae4d3d31b073ead1563e6e6694.jpg');
   background-size: contain;
+  height:100%;
 }
-#input{
+#inputId{
   width:15rem;
   height:1.5rem;
   border-radius:40px;
@@ -87,4 +101,26 @@ button:hover{
 .header{
   text-align:center;
   color:#ffffff;
+}
+.card{
+  width:14rem;
+  margin-left:2rem;
+  margin-bottom:1rem;
+}
+.option1{
+  background-color:#cd5e6d;
+}
+.option2{
+  background-color:#edd386;
+}
+.option3{
+  background-color:#ffffff;
+}
+.btn{
+ background-color:#FDE0B0;
+ color:black;
+ border-radius:20px;
+}
+.btn:hover{
+  background-color:#c58c30;
 }
